@@ -13,7 +13,7 @@
 
             var decimalAnswer = Add(x, y);
 
-            var Answer3 = Add(3, 18, true);
+            var Answer3 = Add(0, 1, false);
 
             Console.WriteLine($"integer Add: {answer} decimal Add: {decimalAnswer} \n" +
                 $"{Answer3}");
@@ -34,13 +34,14 @@
           
         {
             var sum = num1 + num2;
+
             if (dollars == true && sum == 1)
             {
                 return $"{sum} dollar";
             }
             else if (dollars == false && sum == 1)
             {
-                return $"{sum} dollar";
+                return sum.ToString();
             }
             else
             {
